@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n,d,cnt=0;
+	cout<<"Enter n:";
+	cin>>n;
+	cout<<"Enter d:";
+	cin>>d;
+	for(int i=0;i<=n;i++){
+		if(i==d)
+		  cnt++;
+		else{
+			int temp=i;
+			while(temp!=0){
+				int digit=temp%10;
+				temp=temp/10;
+				if(digit==d)
+				  cnt++;
+			}
+		}
+	}
+	cout<<cnt;
+    return 0;
+}
