@@ -11,9 +11,8 @@ int MCM(int* p,int i,int j)
 	}
 	dp[i][j]=INT_MAX;
 	for(int k=i;k<j;k++)
-	{
-		dp[i][j]=min(dp[i][j],MCM(p,i,k)+MCM(p,k+1,j)+p[i-1]*p[k]*p[j]);
-	}
+	  dp[i][j]=min(dp[i][j],MCM(p,i,k)+MCM(p,k+1,j)+p[i-1]*p[k]*p[j]);
+	
 	
 	return dp[i][j];
 }
