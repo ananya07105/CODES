@@ -5,10 +5,12 @@ void Dda(int x1,int x2,int y1,int y2){
 	float steps;
 	float d_x=(x2-x1);
 	float d_y=(y2-y1);
-	if(d_x>d_y){
+	if(d_x>d_y)
+	{
 		steps=d_x;
 	}
-	else{
+	else
+	{
 		steps=d_y;
 	}
 	float x_inc=d_x/steps;
