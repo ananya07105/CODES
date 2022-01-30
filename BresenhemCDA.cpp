@@ -17,7 +17,7 @@ int main()
 	printf("The points are:\n");
 	while(x<=y)
 	{
-		putpixel(x+xc,y+yc,WHITE);
+	putpixel(x+xc,y+yc,WHITE);
         putpixel(x+xc,-y+yc,WHITE);
         putpixel(-x+xc,-y+yc,WHITE);
         putpixel(-x+xc,y+yc,WHITE);
@@ -25,18 +25,18 @@ int main()
         putpixel(y+xc,-x+yc,WHITE);
         putpixel(-y+xc,-x+yc,WHITE);
         putpixel(-y+xc,x+yc,WHITE);
-		printf("(%d, %d)\n",x,y);
-		if(d<=0)
-		{
-		    d=d+4*x+6;
-		    x++;
-		}
-	    else
-	    {
+	printf("(%d, %d)\n",x,y);
+	if(d<=0)
+	{
+		d=d+4*x+6;
+	        x++;
+	}
+	else
+	{
 		  d=d+4*x-4*y+10;
 		  y=y-1;
 		  x++;
-	    }
+        }
 	   
 }
 getch();
