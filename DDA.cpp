@@ -14,9 +14,9 @@ int main()
 	dx=x2-x1;
 	dy=y2-y1;
 	if(dx>dy)
-		step=dx;
+            step=dx;
 	else
-		step=dy;
+	    step=dy;
 	xn=dx/step;
 	yn=dy/step;
 	for(i=1;i<=step;i++)
