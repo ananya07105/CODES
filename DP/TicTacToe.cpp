@@ -13,14 +13,16 @@ int main(void)
 	printf("You will be playing against the computer.\n");
 	done=' ';
 	init_matrix();
-	do{
+	do
+	{
 		disp_matrix();
 		get_player_move();
 		done=check();
 		if(done!=' ') break;
 		get_computer_move();
 		done=check();
-	}while(done==' ');
+	}
+	while(done==' ');
 	if(done==' ') printf("You won!\n");
 	else printf("I won!!!!\n");
 	disp_matrix();
