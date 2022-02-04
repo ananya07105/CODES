@@ -2,18 +2,17 @@ function readLine() {
   return inputString[currentLine++];
 }
 function makeInputVerifier(minimum, maximum) {
-  function verify(input)
-{
+     function verify(input)
+     {
     
-  if(input<minimum)
-     return ("Input is less than minimum value");
-  if(input>=minimum&&input<=maximum)
-    return ("Input is in range");
-  if(input>maximum)
-    return ("Input is more than maximum value");
-  else
-    return;
-    
+         if(input<minimum)
+            return ("Input is less than minimum value");
+         if(input>=minimum&&input<=maximum)
+            return ("Input is in range");
+         if(input>maximum)
+            return ("Input is more than maximum value");
+         else
+           return;  
 }
   
   return verify;
