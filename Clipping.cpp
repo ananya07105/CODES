@@ -25,12 +25,15 @@ void Dda(int x1,int x2,int y1,int y2){
 	
 	return;
 }
-int bit(int x, int y, int xl, int xh, int yl, int yh){
+int bit(int x, int y, int xl, int xh, int yl, int yh)
+{
 	int result=0;
-	if(x<xl){
+	if(x<xl)
+	{
 		result=1;
 	}
-	else if(x>xh){
+	else if(x>xh)
+	{
 		result=((1<<1) | result);
 	}
 	if(y>yh){
