@@ -16,7 +16,8 @@ int main()
 	x=0;
 	y=r;
 	p=1-r;
-	do{
+	do
+	{
 		mid_pts(xc,yc,x,y);
 		if(p<0)
 		{
