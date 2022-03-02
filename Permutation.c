@@ -3,9 +3,9 @@ int main()
 {
 	char a[20],b[20];
 	printf("\nEnter String 1:");
-    gets(a);
+        gets(a);
 	printf("\nEnter String 2:");
-    gets(b);
+        gets(b);
 	printf("\n%s & %s",a,b);
 	
 }
