@@ -14,6 +14,6 @@ int main()
 {
 	int arr[]={5,2,3,4,6};
 	int n=sizeof(arr)/sizeof(arr[0]);
-    bubbleSort(arr,n);
+        bubbleSort(arr,n);
 	return 0;
 }
