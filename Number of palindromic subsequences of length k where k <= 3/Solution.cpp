@@ -21,7 +21,8 @@ void precompute(string s,int n,int l[][MAX],int r[][MAX])
 int countPalindromes(int k,int n,int l[][MAX],int r[][MAX])
 {
 	int ans=0;
-	if(k==1){
+	if(k==1)
+	{
 		for(int i=0;i<MAX_CHAR;i++)
 		  ans+=l[i][n-1];
 		return ans;
