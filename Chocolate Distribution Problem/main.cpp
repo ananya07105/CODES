@@ -4,10 +4,8 @@ int findMinDiff(int arr[],int n,int m)
     return 0;
   sort(arr,arr+n);
   for(int i=0;i+m-1<n;i++)
-  {
-    int min_diff=INT_MAX;
+  { int min_diff=INT_MAX;
     if(diff<min_diff)
-      min_diff=diff;
-  }
+      min_diff=diff;}
   return min_diff;
 }
