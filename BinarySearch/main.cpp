@@ -21,9 +21,11 @@ int main()
 			printf("%d found at location %d.\n",search,mid+1);
 			break;
 		}
-		else{
+		else
+		{
 		last=mid-1;
-		mid=(first+last)/2;}
+		mid=(first+last)/2;
+		}
 	}   
 	if(first>last)
 	  printf("Not found! %d is not present in the list.\n",search);
